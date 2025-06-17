@@ -1,0 +1,33 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    background-color: #f6f6f6;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    max-width: 600px;
+    margin: 0 auto;
+}
+.card__img {
+    width: 200px;
+    object-fit: cover;
+}
+.card__info {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card__title {
+    font-size: 25px;
+}
+
+@media (max-width: 500px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card__img {
+        width: 100%;
+        height: auto;
+    }
+}
