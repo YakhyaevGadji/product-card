@@ -14,7 +14,7 @@ const ProductCard = (props: IPropsProductCard): JSX.Element => {
         style: "currency",
         currency,
         minimumFractionDigits: 2,
-    }).format(price / 100);
+    }).format(price);
 
     return (
         <div className="card">
